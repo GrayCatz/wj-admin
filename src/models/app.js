@@ -81,6 +81,7 @@ export default {
         const { list } = yield call(queryRouteList)
         const { permissions } = user
         let routeList = list
+        console.log("sdfdsf",list)
         if (
           permissions.role === ROLE_TYPE.ADMIN ||
           permissions.role === ROLE_TYPE.DEVELOPER
