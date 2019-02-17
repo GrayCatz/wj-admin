@@ -36,7 +36,7 @@ const database = [
     name: '产品',
     zhName: '产品',
     icon: 'user',
-    route: '/picture',
+    route: '/product',
   },
   {
     id: '5',
