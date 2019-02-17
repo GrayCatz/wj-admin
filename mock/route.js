@@ -29,7 +29,7 @@ const database = [
     name: '品牌',
     zhName: '品牌',
     icon: 'user',
-    route: '/picture',
+    route: '/brand',
   },
   {
     id: '4',

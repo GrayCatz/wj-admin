@@ -8,82 +8,42 @@ import styles from './List.less'
 const { confirm } = Modal
 
 
-const dataSource = [{
-  id: 9,
-  name: '基础护肤',
-  createTime: '2019-02-03',
-  creator: '陈奕迅',
-  remark: '精华，面霜，眼霜',
-},
+const dataSource = [
   {
     id: 1,
-    name: '基础护肤',
+    name: '迪奥',
     createTime: '2019-02-03',
     creator: '陈奕迅',
     remark: '精华，面霜，眼霜',
   },
   {
     id: 2,
-    name: '基础护肤',
+    name: '迪奥',
     createTime: '2019-02-03',
     creator: '陈奕迅',
     remark: '精华，面霜，眼霜',
   },
   {
     id: 3,
-    name: '基础护肤',
+    name: '迪奥',
     createTime: '2019-02-03',
     creator: '陈奕迅',
     remark: '精华，面霜，眼霜',
   },
   {
     id: 4,
-    name: '基础护肤',
+    name: '迪奥',
     createTime: '2019-02-03',
     creator: '陈奕迅',
     remark: '精华，面霜，眼霜',
   },
   {
     id: 5,
-    name: '基础护肤',
+    name: '迪奥',
     createTime: '2019-02-03',
     creator: '陈奕迅',
     remark: '精华，面霜，眼霜',
-  },
-  {
-    id: 6,
-    name: '基础护肤',
-    createTime: '2019-02-03',
-    creator: '陈奕迅',
-    remark: '精华，面霜，眼霜',
-  }, {
-    id: 7,
-    name: '基础护肤',
-    createTime: '2019-02-03',
-    creator: '陈奕迅',
-    remark: '精华，面霜，眼霜',
-  },
-  {
-    id: 8,
-    name: '基础护肤',
-    createTime: '2019-02-03',
-    creator: '陈奕迅',
-    remark: '精华，面霜，眼霜',
-  }]
-
-const columns = [{
-  title: '姓名',
-  dataIndex: 'name',
-  key: 'name',
-}, {
-  title: '年龄',
-  dataIndex: 'age',
-  key: 'age',
-}, {
-  title: '住址',
-  dataIndex: 'address',
-  key: 'address',
-}]
+  },]
 
 
 @withI18n()
@@ -95,7 +55,7 @@ class List extends PureComponent {
       onEditItem(record)
     } else if (e.key === '2') {
       confirm({
-        title: i18n.t`确认删除该类别：` + record.name + '?',
+        title: i18n.t`确认删除该品牌：` + record.name + '?',
         onOk() {
           onDeleteItem(record.id)
         },
@@ -108,7 +68,7 @@ class List extends PureComponent {
 
     const columns = [
       {
-        title: <Trans>类别</Trans>,
+        title: <Trans>品牌名称</Trans>,
         dataIndex: 'name',
         key: 'name',
         width: 80,
