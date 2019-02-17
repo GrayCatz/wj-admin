@@ -4,6 +4,7 @@ import { Modal, Table } from 'antd'
 import { DropOption } from 'components'
 import { Trans, withI18n } from '@lingui/react'
 import styles from './List.less'
+import { Link } from 'react-router-dom'
 
 const { confirm } = Modal
 
@@ -80,7 +81,7 @@ class List extends PureComponent {
       onEditItem(record)
     } else if (e.key === '2') {
       confirm({
-        title: i18n.t`确认删除该品牌：` + record.name + '?',
+        title: i18n.t`确认删除该订单：` + record.serial + '?',
         onOk() {
           onDeleteItem(record.id)
         },
@@ -98,6 +99,8 @@ class List extends PureComponent {
         dataIndex: 'serial',
         key: 'serial',
         width: 80,
+        render: (text, record) => <Link to={`/order/1234324`}>{text}</Link>,
+        // render: (record) => <Link to={`order/${record.id}`}/>,
         // fixed: 'left',
         // render: text => <Avatar style={{ marginLeft: 8 }} src={text}/>,
       },
@@ -148,8 +151,7 @@ class List extends PureComponent {
             <DropOption
               onMenuClick={e => this.handleMenuClick(record, e)}
               menuOptions={[
-                { key: '1', name: i18n.t`处理` },
-                { key: '2', name: i18n.t`详情` },
+                { key: '2', name: i18n.t`删除` },
               ]}
             />
           )

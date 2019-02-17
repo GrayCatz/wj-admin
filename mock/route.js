@@ -59,12 +59,20 @@ const database = [
     icon: 'user',
     route: '/picture',
   },
+  // {
+  //   id: '8',
+  //   name: '用户',
+  //   zhName: '用户',
+  //   icon: 'user',
+  //   route: '/user',
+  // },
   {
-    id: '8',
-    name: '用户',
-    zhName: '用户',
-    icon: 'user',
-    route: '/user',
+    id: '91',
+    // menuParentId: '5',
+    breadcrumbParentId: '2',
+    name: '订单详情',
+    zhName: '订单详情',
+    route: '/order/:id',
   },
 
   // {
@@ -84,8 +92,8 @@ const database = [
   //   route: '/post',
   // },
   // {
-  //   id: '21',
-  //   menuParentId: '-1',
+  //   id: '81',
+  //   menuParentId: '8',
   //   breadcrumbParentId: '2',
   //   name: 'User Detail',
   //   zhName: '用户详情',
