@@ -43,7 +43,7 @@ const database = [
     name: '订单列表',
     zhName: '订单列表',
     icon: 'user',
-    route: '/picture',
+    route: '/order',
   },
   {
     id: '6',
