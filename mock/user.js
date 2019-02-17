@@ -31,7 +31,7 @@ const EnumRoleType = {
 
 const userPermission = {
   DEFAULT: {
-    visit: ['1', '2','8', '21', '7', '5', '51', '52', '53'],
+    visit: ['1', '2','3','4','5','6','7','8', '21', '7', '5', '51', '52', '53'],
     role: EnumRoleType.DEFAULT,
   },
   ADMIN: {

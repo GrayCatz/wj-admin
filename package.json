@@ -108,7 +108,7 @@
     "prettier": "prettier --write 'src/**/*.(js|less)'",
     "add-locale": "lingui add-locale",
     "extract": "lingui extract",
-    "trans": "lingui extract --clean && node ./scripts/translate.js",
+    "trans": "lingu i extract --clean && node ./scripts/translate.js",
     "doc": "docsify serve docs"
   }
 }
